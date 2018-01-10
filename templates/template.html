@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dopis</title>
+</head>
+<body>
+    <page size='A4'>
+        <div class="order-info-wrap">
+            <div class="info-item">
+                <h3>Zdar {{ name }},</h3>
+                <p>jsme fokin Leons a chceme ti porvat naše shoes... muzes si bejt jistej ze jich bude naprosta halda</p>
+                <br>
+                <p>tak se třeba ozvy</p>
+                <br>
+                <p>Čus</p>
+            </div>
+        </div>
+    </page>
+</body>
+
+<style> 
+html{
+    /*background-color: #000;*/
+}
+
+body,html {
+    height: 297mm;
+    width: 210mm;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    float: none;
+    display: block;
+    margin: 0 auto;
+}
+
+page[size=A4] {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .5cm
+}
+
+h1 {
+    font-size: 72px;
+    padding-top: 20px;
+    padding-left: 20px;
+    color: #C4AF94;
+    margin: 0;
+    font-weight: 700
+}
+
+p {
+    font-weight: 300
+}
+
+td {
+    font-weight: 300
+}
+
+@media print {
+    body,
+    page[size=A4] {
+        margin: 0;
+        box-shadow: 0
+    }
+}
+
+.invoice-header-wrap {
+    overflow: hidden
+}
+
+.invoice-header-wrap h1 {
+    float: left
+}
+
+.invoice-header-wrap h3 {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 32px;
+    text-align: right;
+    font-weight: 700
+}
+
+.invoice-header-wrap p {
+    margin: 0;
+    margin-bottom: 5px
+}
+
+.invoice-header-wrap div {
+    float: right;
+    margin-top: 30px;
+    margin-right: 20px;
+    text-align: right
+}
+
+.order-info-wrap {
+    overflow: hidden;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px
+}
+
+.order-info-wrap .info-item {
+    float: left;
+    padding-top: 30px;
+}
+
+.order-info-wrap .info-item h3 {
+    margin: 0;
+    margin-bottom: 10px
+}
+
+.order-info-wrap .info-item p {
+    margin: 0;
+    margin-bottom: 6px
+}
+
+table {
+    width: 95%;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 30px;
+    border-collapse: collapse
+}
+
+table th {
+    background: #d4d4d4;
+    height: 25px
+}
+
+table td {
+    height: 40px;
+    border-bottom: 1px solid #cacaca
+}
+
+.order-info {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    overflow: hidden
+}
+
+.order-info .order-info-item {
+    float: left;
+}
+
+.order-info p {
+    margin: 0;
+    margin-bottom: 5px
+}
+
+</style>
+
+</html>
