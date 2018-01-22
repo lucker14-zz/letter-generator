@@ -1,7 +1,7 @@
 import json
 import pdfkit
 
-from jinja2 import Template, Environment, FileSystemLoader
+from jinja2 import Environment, FileSystemLoader
 
 
 def app():
@@ -35,6 +35,7 @@ def app():
         save_file_name = 'output/' + item['name'] + '.pdf'
 
         pdfkit.from_string(output_from_parsed_template, save_file_name, options=options)
+
 
 app()
 
