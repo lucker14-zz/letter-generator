@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="139px" height="27px" viewBox="0 0 139 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Group</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.0406593374 0 17 39.7241778 17 39.7241778 0.0406593374 4.81867632e-20 0.0406593374"></polygon>
+    </defs>
+    <g id="lovely-final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-370.000000, -176.000000)">
+        <g id="Group-2" transform="translate(0.000000, 83.000000)">
+            <g id="Group" transform="translate(370.000000, 93.000000)">
+                <g id="Page-1-Copy" transform="translate(20.000000, 14.000000) scale(-1, 1) translate(-20.000000, -14.000000) translate(0.000000, 5.000000)">
+                    <g id="Group-3" transform="translate(0.000000, 1.000000)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <g id="Clip-2"></g>
+                        <path d="M39.7241778,1.23088947 C39.7241778,1.23088947 34.7677333,-2.1369 28.9046222,2.45757368 C22.6210667,7.38131053 15.8788444,10.2999421 10.2326222,11.1937842 C4.5864,12.0885211 -0.000266666667,9.65036316 -0.000266666667,9.65036316 C-0.000266666667,9.65036316 3.56684444,16.8216789 10.9775111,16.9603632 C10.9775111,16.9603632 18.1428444,18.0886263 29.6868444,8.34494211 C35.6504,3.10983684 39.7241778,1.23088947 39.7241778,1.23088947" id="Fill-1" fill="#594930" mask="url(#mask-2)"></path>
+                    </g>
+                    <path d="M5.22827572,6.98217383 C4.64561592,7.57020207 5.26848997,8.51943543 6.08349876,8.29860387 C9.31940539,7.42126916 15.4927396,6.41383213 21.1155853,9.27865093 C28.584712,13.0841437 11.8868618,0.266497611 5.22827572,6.98217383" id="Fill-4" fill="#594930"></path>
+                    <path d="M9.10635006,2.0069202 C8.77300254,2.4147706 9.28728469,3.57836864 9.76591469,3.4339744 C13.7732155,2.22224494 19.192341,2.87328565 25.1337705,6.25177314 C32.7018289,10.5557348 15.2064316,-5.44078281 9.10635006,2.0069202" id="Fill-6" fill="#594930"></path>
+                </g>
+                <text id="Leons" font-family="Butler-Bold, Butler" font-size="36" font-weight="bold" letter-spacing="-1.22399962" fill="#594930">
+                    <tspan x="47" y="26">Leon</tspan>
+                    <tspan x="124.400002" y="26" letter-spacing="-0.881279707">s</tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>

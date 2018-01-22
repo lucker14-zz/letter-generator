@@ -3,16 +3,16 @@ import pdfkit
 
 from jinja2 import Template, Environment, FileSystemLoader
 
+
 def app():
     print('*********************** app started ***********************')
     data = json.load(open('input/data.json'))
 
     # itterate over input data
     for item in data:
-        pdf = None
 
         print(item)
-        print(item['email'])
+        print(item['url_name'])
 
         # context data for template
 
@@ -30,9 +30,7 @@ def app():
         # generate file and save it to output folder
         env = Environment(loader=FileSystemLoader('templates'))
         template = env.get_template('template.html')
-        output_from_parsed_template = template.render(email=item['email'], name=item['name'])
-
-        print(output_from_parsed_template)
+        output_from_parsed_template = template.render(email=item['email'], name=item['name'], url_name=item['url_name'])
 
         save_file_name = 'output/' + item['name'] + '.pdf'
 

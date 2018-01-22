@@ -3,17 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Dopis</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700&amp;subset=latin-ext" rel="stylesheet">
 </head>
 <body>
     <page size='A4'>
         <div class="order-info-wrap">
             <div class="info-item">
-                <h3>Zdar {{ name }},</h3>
-                <p>jsme fokin Leons a chceme ti porvat naše shoes... muzes si bejt jistej ze jich bude naprosta halda</p>
+                <p>Dobrý den,</p>
+                <p>mé jméno je Sanja Ristič. Píši Vám, protože v tuhle chvíli hledáme prodejnu, se kterou bysme rádi navázali partnerství. Vaše prodejna {{ name }} mě velice zaujala a tak jsem se rozhodla vás oslovit. Jmenujeme se Leons.cz a za dva roky jsme v České a Slovenské republice vybudovali silnou značku ve zdravotní obuvi.</p>
                 <br>
-                <p>tak se třeba ozvy</p>
+                <p>Od našich zákaznic máme skvělou zpětnou vazbu, naše obuv jim opravdu pomáhá. Často mi ale říkají, že si obuv chtějí někde vyzkoušet. Proto, jsem se rozhodla Vám napsat. U vás by si obuv mohli vyzkoušet a rovnou nakoupit. Co by to pro Vás znamenalo?</p>
                 <br>
-                <p>Čus</p>
+                <p>Prosím, pokud budete mít zájem, podívejte se na naší stránku, kde se dozvíte více informací.</p>
+                <br>
+                <p>Odkaz: www.leons.cz/b2b/{% if url_name %}{{ url_name }}/{% endif %}</p>
+                <br>
+                <p>Mějte se moc hezky</p>
+                <p>Sanja Ristić</p>
+                <div class="leons-logo"></div>
             </div>
         </div>
     </page>
@@ -43,6 +50,15 @@ page[size=A4] {
     margin-bottom: .5cm
 }
 
+div.leons-logo{
+    background-image: url('https://cdn.leons.cz/media/images/article/leons-logo.svg');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 150px;
+    height: 46px;
+}
+
 h1 {
     font-size: 72px;
     padding-top: 20px;
@@ -53,7 +69,9 @@ h1 {
 }
 
 p {
-    font-weight: 300
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 28px;
 }
 
 td {
@@ -98,14 +116,14 @@ td {
 
 .order-info-wrap {
     overflow: hidden;
-    margin-left: 20px;
-    margin-right: 20px;
+    margin-left: 80px;
+    margin-right: 80px;
     margin-top: 20px
 }
 
 .order-info-wrap .info-item {
     float: left;
-    padding-top: 30px;
+    padding-top: 80px;
 }
 
 .order-info-wrap .info-item h3 {
