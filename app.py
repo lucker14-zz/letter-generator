@@ -37,7 +37,25 @@ def app():
         pdfkit.from_string(output_from_parsed_template, save_file_name, options=options)
 
 
-app()
+def stitky():
+    print('*********************** app started ***********************')
+    data = json.load(open('input/data.json'))
+
+    parts = chunks(data, 8)
+
+    for item in parts:
+        print(item)
+
+
+def chunks(l, n):
+    """Yield successive n-sized chunks from l."""
+    for i in range(0, len(l), n):
+        yield l[i:i + n]
+
+
+# app()
+
+stitky()
 
 # TODO: sys args
 

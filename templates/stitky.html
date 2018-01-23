@@ -8,22 +8,16 @@
 <body>
     <page size='A4'>
         <div class="order-info-wrap">
-            <div class="info-item">
-                <p>Dobrý den,</p>
-                <p>jmenuji se Sanja Ristič. Píši Vám, protože v tuhle chvíli hledáme prodejnu, se kterou bysme rádi navázali partnerství. Vaše prodejna {{ name }} mě velice zaujala a tak jsem se rozhodla vás oslovit. Jmenujeme se Leons.cz a za dva roky jsme v České a Slovenské republice vybudovali silnou značku v oboru zdravotní obuvi.</p>
-                <br>
-                <p>Od našich zákaznic máme skvělou zpětnou vazbu, naše obuv jim opravdu pomáhá. Často mi ale říkají, že si obuv chtějí někde vyzkoušet. Proto, jsem se rozhodla Vám napsat. U vás by si obuv mohli vyzkoušet a rovnou nakoupit. Zajímala by Vás spolupráce s naší společností?</p>
-                <br>
-                <p>Pro začátek se, prosím, podívejte se na naší stránku, kde se dozvíte více informací.</p>
-                <br>
-                <p>Odkaz: www.leons.cz/b2b/{% if url_name %}{{ url_name }}/{% endif %}</p>
-                <br>
-                <p>Pokud budete mít o spolupráci zájem, můžete si na stránce rovnou domluvit nezávaznou schůzku.</p>
-                <br>
-                <p>Mějte se moc hezky</p>
-                <p>Sanja Ristić</p>
-                <div class="leons-logo"></div>
-            </div>
+            {% for item in comapnies %}
+                {% if item.zip %}
+                    <div class="stitek">
+                        <p><b>{{ item.name }}</b></p>
+                        <p>{{ item.street }}</p>
+                        <p>{{ item.city }}</p>
+                        <p>{{ item.zip }}</p>
+                    </div>
+                {% endif %}
+            {% endif %}
         </div>
     </page>
 </body>
@@ -50,6 +44,18 @@ page[size=A4] {
     display: block;
     margin: 0 auto;
     margin-bottom: .5cm
+}
+
+div.stitek{
+    width: 49%;
+    height: 24%;
+    padding: 25px;
+    border: 1px solid black;
+
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 div.leons-logo{
@@ -118,14 +124,10 @@ td {
 
 .order-info-wrap {
     overflow: hidden;
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: 20px
 }
 
 .order-info-wrap .info-item {
     float: left;
-    padding-top: 80px;
 }
 
 .order-info-wrap .info-item h3 {
@@ -174,5 +176,13 @@ table td {
 }
 
 </style>
+
+<script>
+// for (var i = data.length - 1; i >= 0; i--) {
+//     if (data[i].zip == null) {
+//         data.splice(i, 1)
+//     }
+// }
+</script>
 
 </html>
