@@ -39,12 +39,36 @@ def app():
 
 def stitky():
     print('*********************** app started ***********************')
+
+    # set options for print
+    options = {
+        'page-size': 'A4',
+        'margin-top': '0',
+        'margin-right': '0',
+        'margin-bottom': '0',
+        'margin-left': '0',
+        'disable-smart-shrinking': None,
+        'zoom': 3.1
+    }
+
     data = json.load(open('input/data.json'))
 
     parts = chunks(data, 8)
 
+    count = 1
+
     for item in parts:
-        print(item)
+        env = Environment(loader=FileSystemLoader('templates'))
+        template = env.get_template('stitky.html')
+        output_from_parsed_template = template.render(companies=item)
+
+        print(output_from_parsed_template)
+
+        save_file_name = 'output/stitky/stitky-' + str(count) + '.pdf'
+
+        count += 1
+
+        pdfkit.from_string(output_from_parsed_template, save_file_name, options=options)
 
 
 def chunks(l, n):

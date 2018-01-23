@@ -8,21 +8,84 @@
 <body>
     <page size='A4'>
         <div class="order-info-wrap">
-            {% for item in companies %}
-                {% if item.zip %}
+
+
                     <div class="stitek">
-                        <p><b>{{ item.name }}</b></p>
-                        <p>{{ item.street }}</p>
-                        <p>{{ item.city }}</p>
-                        <p>{{ item.zip }}</p>
+                        <p><b>Zdravotní potřeby a zdravé obouvání DVORT</b></p>
+                        <p>Kostelecká 823/77</p>
+                        <p>Praha, Čakovice</p>
+                        <p>19600</p>
                     </div>
-                {% endif %}
-            {% endfor %}
+
+
+
+                    <div class="stitek">
+                        <p><b>DMA - kompenzační pomůcky</b></p>
+                        <p>U Dálnice 207</p>
+                        <p>Kunice</p>
+                        <p>25163</p>
+                    </div>
+
+
+
+                    <div class="stitek">
+                        <p><b>Biogen PRAHA s.r.o.</b></p>
+                        <p>Ke sv. Izidoru 2293/4a</p>
+                        <p>Praha, Chodov</p>
+                        <p>14900</p>
+                    </div>
+
+
+
+                    <div class="stitek">
+                        <p><b>S.A.B. Impex, s.r.o.</b></p>
+                        <p>V Úvalu 147/24</p>
+                        <p>Praha, Motol</p>
+                        <p>15000</p>
+                    </div>
+
+
+
+                    <div class="stitek">
+                        <p><b>Cestovatelskyobchod.cz</b></p>
+                        <p>Aviatická 1017/2</p>
+                        <p>Praha, Ruzyně</p>
+                        <p>16100</p>
+                    </div>
+
+
+
+                    <div class="stitek">
+                        <p><b>Zdravpro, s.r.o.</b></p>
+                        <p>Kamenická 605/18</p>
+                        <p>Praha, Holešovice</p>
+                        <p>17000</p>
+                    </div>
+
+
+
+                    <div class="stitek">
+                        <p><b>Emedik.cz</b></p>
+                        <p>Gogolova 275/24</p>
+                        <p>Trmice</p>
+                        <p>40004</p>
+                    </div>
+
+
+
+                    <div class="stitek">
+                        <p><b>BTL zdravotnická technika, a.s.</b></p>
+                        <p>Šantrochova 1883/16</p>
+                        <p>Praha, Břevnov</p>
+                        <p>16200</p>
+                    </div>
+
+
         </div>
     </page>
 </body>
 
-<style> 
+<style>
 html{
     /*background-color: #000;*/
 }
@@ -47,13 +110,10 @@ page[size=A4] {
 }
 
 div.stitek{
-    width: 43%;
+    width: 40%;
     height: 15%;
-    padding: 1% 3%;
+    padding: 1%;
     border: 1px solid black;
-
-    float: left;
-    margin: 0;
 
     display: flex;
     flex-flow: column wrap;
